@@ -1,4 +1,4 @@
 mmednik_slider
 ==============
 
-Magento widget for sliders managment
+Magento widget for sliders management
