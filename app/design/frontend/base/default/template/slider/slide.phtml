@@ -1,0 +1,33 @@
+<div id="<?php echo $this->_sliderId; ?>">
+    <ul class="bjqs">
+    <?php foreach ($this->_slides as $key => $slide): ?>
+        <li><?php echo $slide; ?></li>
+    <?php endforeach; ?>
+    </ul>
+</div>
+    
+<script type="text/javascript">
+//<![CDATA[
+    (function ($) {
+        $('#<?php echo $this->_sliderId; ?>').bjqs({
+            width           : <?php echo $this->_sliderWidth; ?>,
+            height          : <?php echo $this->_sliderHeight; ?>,
+            animtype        : '<?php echo $this->_animtype; ?>',
+            animduration    : <?php echo $this->_animduration; ?>,
+            animspeed       : <?php echo $this->_animspeed; ?>,
+            automatic       : <?php echo $this->_automatic; ?>,
+            showcontrols    : <?php echo $this->_showcontrols; ?>,
+            centercontrols  : <?php echo $this->_centercontrols; ?>,
+            nexttext        : '<?php echo $this->_nexttext; ?>',
+            prevtext        : '<?php echo $this->_prevtext; ?>',
+            showmarkers     : <?php echo $this->_showmarkers; ?>,
+            centermarkers   : <?php echo $this->_centermarkers; ?>,
+            keyboardnav     : <?php echo $this->_keyboardnav; ?>,
+            hoverpause      : <?php echo $this->_hoverpause; ?>,
+            usecaptions     : <?php echo $this->_usecaptions; ?>,
+            randomstart     : <?php echo $this->_randomstart; ?>,
+            responsive      : <?php echo $this->_responsive; ?>
+        });
+    }(jQuery));
+//]]>
+</script>
