@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+<widgets>
+    <slider type="mmednik_slider/slider">
+        <name>Slider</name>
+        <description>MMednik Slider, a Magento widget for sliders managment</description>
+        <parameters>
+            <!-- global configuration -->
+            <id>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Unique Identifier</label>
+                <type>text</type>
+                <value>my-slider</value>
+            </id>
+            
+            <width>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Width</label>
+                <type>text</type>
+                <value>940</value>
+            </width>
+            
+            <height>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Height</label>
+                <type>text</type>
+                <value>400</value>
+            </height>
+            
+            <animtype>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Type of animation</label>
+                <type>select</type>
+                <values>
+                    <fade>
+                        <label>Fade</label>
+                        <value>fade</value>
+                    </fade>
+                    <slide>
+                        <label>Slide</label>
+                        <value>slide</value>
+                    </slide>
+                </values>
+            </animtype>
+            
+            <animduration>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Duration of animation (ms)</label>
+                <type>text</type>
+                <value>450</value>
+            </animduration>
+            
+            <animspeed>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Speed of animation (ms)</label>
+                <type>text</type>
+                <value>4000</value>
+            </animspeed>
+            
+            <automatic>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Automatic animation</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </automatic>
+            
+            <showcontrols>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Show "Next/Prev" controls</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </showcontrols>
+            
+            <centercontrols>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Center "Next/Prev" controls verically</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </centercontrols>
+            
+            <nexttext>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Text for "Next" button</label>
+                <type>text</type>
+                <value>Next</value>
+            </nexttext>
+            
+            <prevtext>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Text for "Prev" button</label>
+                <type>text</type>
+                <value>Prev</value>
+            </prevtext>
+            
+            <showmarkers>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Individual slide markers</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </showmarkers>
+            
+            <centermarkers>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Center markers horizontally</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </centermarkers>
+            
+            <keyboardnav>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Enable keyboard navigation</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </keyboardnav>
+            
+            <hoverpause>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Pause the slider on hover</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </hoverpause>
+            
+            <usecaptions>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Show captions</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </usecaptions>
+            
+            <randomstart>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Start slider at random slide</label>
+                <type>select</type>
+                <values>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                </values>
+            </randomstart>
+            
+            <responsive>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Enable responsive capabilities (beta)</label>
+                <type>select</type>
+                <values>
+                    <true>
+                        <label>Yes</label>
+                        <value>true</value>
+                    </true>
+                    <false>
+                        <label>No</label>
+                        <value>false</value>
+                    </false>
+                </values>
+            </responsive>
+            
+            <!-- slides -->
+            <slide1link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 1 Link (href)</label>
+                <type>text</type>
+            </slide1link>
+            <slide1alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 1 Caption (alt + title)</label>
+                <type>text</type>
+            </slide1alt>
+            <slide1>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Slide 1 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide1>
+            
+            <slide2link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 2 Link (href)</label>
+                <type>text</type>
+            </slide2link>
+            <slide2alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 2 Caption (alt + title)</label>
+                <type>text</type>
+            </slide2alt>
+            <slide2>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 2 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide2>
+            
+            <slide3link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 3 Link (href)</label>
+                <type>text</type>
+            </slide3link>
+            <slide3alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 3 Caption (alt + title)</label>
+                <type>text</type>
+            </slide3alt>
+            <slide3>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 3 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide3>
+            
+            <slide4link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 4 Link (href)</label>
+                <type>text</type>
+            </slide4link>
+            <slide4alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 4 Caption (alt + title)</label>
+                <type>text</type>
+            </slide4alt>
+            <slide4>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 4 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide4>
+            
+            <slide5link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 5 Link (href)</label>
+                <type>text</type>
+            </slide5link>
+            <slide5alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 5 Caption (alt + title)</label>
+                <type>text</type>
+            </slide5alt>
+            <slide5>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 5 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide5>
+            
+            <slide6link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 6 Link (href)</label>
+                <type>text</type>
+            </slide6link>
+            <slide6alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 6 Caption (alt + title)</label>
+                <type>text</type>
+            </slide6alt>
+            <slide6>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 6 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide6>
+            
+            <slide7link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 7 Link (href)</label>
+                <type>text</type>
+            </slide7link>
+            <slide7alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 7 Caption (alt + title)</label>
+                <type>text</type>
+            </slide7alt>
+            <slide7>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 7 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide7>
+            
+            <slide8link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 8 Link (href)</label>
+                <type>text</type>
+            </slide8link>
+            <slide8alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 8 Caption (alt + title)</label>
+                <type>text</type>
+            </slide8alt>
+            <slide8>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 8 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide8>
+            
+            <slide9link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 9 Link (href)</label>
+                <type>text</type>
+            </slide9link>
+            <slide9alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 9 Caption (alt + title)</label>
+                <type>text</type>
+            </slide9alt>
+            <slide9>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 9 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide9>
+            
+            <slide10link>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 10 Link (href)</label>
+                <type>text</type>
+            </slide10link>
+            <slide10alt>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 10 Caption (alt + title)</label>
+                <type>text</type>
+            </slide10alt>
+            <slide10>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Slide 10 Image</label>
+                <type>widgetimagechooser/chooser</type>
+            </slide10>
+            
+            <!-- template -->
+            <template>
+                <visible>0</visible>
+                <value>slider/slide.phtml</value>
+            </template>
+        </parameters>
+    </slider>
+</widgets>

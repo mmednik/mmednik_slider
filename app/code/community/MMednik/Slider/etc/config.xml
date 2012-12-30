@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config> 
+    <modules>
+        <MMednik_Slider>
+            <version>0.0.1</version>
+        </MMednik_Slider>
+    </modules>
+    <global>  
+        <blocks>  
+            <mmednik_slider>  
+                <class>MMednik_Slider_Block</class>  
+            </mmednik_slider>  
+        </blocks>  
+    </global>  
+</config>
