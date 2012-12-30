@@ -1,7 +1,7 @@
 Mmednik_Slider
 ==============
 
-Compatible with Magento CE 1.7.0.2
+Magento widget for sliders management
 
 Copyright (c) 2012 Martín Mednik
 
@@ -21,3 +21,5 @@ How to use
 Mmednik_Slider is a Magento Widget.
 
 So, for use it, you must to add a new widget from **CMS -> Widgets** in the backend. [Check Magento documentation for more](http://www.magentocommerce.com/blog/comments/introducing-magento-widgets/).
+
+Compatible with Magento CE 1.7.0.2
